@@ -13,7 +13,7 @@ const getAuthAdmin = async (req, res, next) => {
             if (isAuthentication) {
                 res.status(200).json({ response: [isAuthentication, admin], message: "You have logged in successfully." });
             } else {
-                res.status(200).json({ response: [isAuthentication], message: "You have logged in successfully." });
+                res.status(200).json({ response: [isAuthentication], message: "Login failed. Please try again." });
             }
         } else {
             //user not exists
@@ -38,7 +38,7 @@ const getAuthSuperAdmin = async (req, res, next) => {
             if (isAuthentication) {
                 res.status(200).json({ response: [isAuthentication, superadmin], message: "You have logged in successfully." });
             } else {
-                res.status(200).json({ response: [isAuthentication], message: "You have logged in successfully." });
+                res.status(200).json({ response: [isAuthentication], message: "Login failed. Please try again." });
             }
         } else {
             //user not exists

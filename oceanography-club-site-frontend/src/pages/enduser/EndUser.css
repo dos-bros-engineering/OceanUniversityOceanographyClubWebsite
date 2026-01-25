@@ -1,4 +1,9 @@
 /* Rich text editor's HTML view */
+.rich-text-display {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .rich-text-display img {
   width: 100%;
   border-radius: 5px;
@@ -16,9 +21,9 @@
 .rich-text-display p,
 .rich-text-display img,
 .rich-text-display iframe,
-.rich-text-display strong, 
-.rich-text-display em, 
-.rich-text-display u, 
+.rich-text-display strong,
+.rich-text-display em,
+.rich-text-display u,
 .rich-text-display li {
   color: #ffffff;
   padding: 0;
@@ -34,27 +39,33 @@
 .rich-text-display .ql-align-center {
   text-align: center;
 }
+
 .rich-text-display .ql-align-right {
   text-align: right;
 }
+
 .rich-text-display .ql-align-justify {
   text-align: justify;
 }
 
 .rich-text-display h1 {
-  font-size: clamp(28px, 3vw, 32px);   /* 28px → 32px */
+  font-size: clamp(28px, 3vw, 32px);
+  /* 28px → 32px */
 }
 
 .rich-text-display h2 {
-  font-size: clamp(24px, 3vw, 28px);   /* 24px → 28px */
+  font-size: clamp(24px, 3vw, 28px);
+  /* 24px → 28px */
 }
 
 .rich-text-display h3 {
-  font-size: clamp(20px, 2vw, 24px);   /* 20px → 24px */
+  font-size: clamp(20px, 2vw, 24px);
+  /* 20px → 24px */
 }
 
 .rich-text-display p {
-  font-size: clamp(16px, 2vw, 20px);   /* 16px → 20px */
+  font-size: clamp(16px, 2vw, 20px);
+  /* 16px → 20px */
 }
 
 .rich-text-display h1,
