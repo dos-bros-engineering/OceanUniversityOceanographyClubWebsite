@@ -7,11 +7,12 @@ Use "npm run dev" to start the backend server with nodemon.
 For dropbox configuration;
     1. create 3 variables - (DROPBOX_CLIENT_ID, DROPBOX_CLIENT_SECRET, DROPBOX_REFRESH_TOKEN)
     2. DROPBOX_CLIENT_ID and DROPBOX_CLIENT_SECRET can be found from dropbox app settings.
-    3. For DROPBOX_REFRESH_TOKEN, 
+    3. Check these permissions (files.content.write, files.content.read, sharing.write, sharing.read) in dropbox.
+    4. For DROPBOX_REFRESH_TOKEN, 
         i. Open a browser and paste this URL, replacing YOUR_CLIENT_ID and YOUR_REDIRECT_URI (https://www.dropbox.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=code&token_access_type=offline&redirect_uri=YOUR_REDIRECT_URI)
         ii. You need to login, if you are not logged in.
         iii. Check the url (https://localhost/?code=LONG_CODE_HERE) and copy that long code.
-        iv. Open postman and create a new post request, and enter keys and values for the body just like as the following table and send it.
+        iv. Open postman to create a new post request and enter this api (https://api.dropboxapi.com/oauth2/token?), and enter keys and values for the body just like as the following table and send it.
              ----------------------------------------
             | Key           | Value                  |
             | ------------- | ---------------------- |
