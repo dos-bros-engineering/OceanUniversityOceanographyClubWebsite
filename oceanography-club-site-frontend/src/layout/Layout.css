@@ -1,0 +1,80 @@
+/* End User Class Style */
+.Enduser-App {
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.Enduser-App::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../assets/enduser-background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Admin Class Style */
+.Admin-App {
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.Admin-App::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../assets/admin-background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Super Admin Class Style */
+.Superadmin-App {
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.Superadmin-App::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../assets/super-admin-background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}

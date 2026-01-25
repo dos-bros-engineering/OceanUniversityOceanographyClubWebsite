@@ -1,0 +1,10 @@
+.comment-component .form-group input,
+.comment-component .form-group textarea {
+  border: 2px solid #f3777b;
+}
+
+.comment-component .form-group input:focus,
+.comment-component .form-group textarea:focus {
+  border-color: #f3777b;
+  box-shadow: 0 0 0 0.1rem #f99a9d;
+}

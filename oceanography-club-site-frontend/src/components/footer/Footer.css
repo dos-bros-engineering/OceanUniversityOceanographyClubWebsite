@@ -1,0 +1,123 @@
+/* End user CSS styles */
+.footer {
+  background-color: #1b3754 !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer Navbar */
+.footer .footer-text {
+  font-size: 17px;
+}
+
+.footer .footer-nav .nav-link,
+.footer .footer-navbar .dropdown-toggle,
+.footer .footer-navbar .dropdown-item {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+/* Footer Dropdown */
+.footer .dropdown-menu {
+  background-color: #1b3754 !important;
+  border: 2px solid #ffffff;
+}
+
+@media (max-width: 991.98px) {
+  .footer .dropdown-menu {
+    border: 0px;
+    padding-top: 0px;
+  }
+}
+
+.footer .dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+.footer .dropdown-item.active {
+  background-color: transparent !important;
+}
+
+.footer .dropdown-divider {
+  background-color: #ffffff;
+  height: 2px;
+}
+
+/* Hide the default dropdown icon */
+.footer .caret-down .dropdown-toggle::after {
+  display: none !important;
+}
+
+/* To center End User NavDropdown menu in small and medium screens */
+@media (max-width: 991.98px) {
+  .footer .nav-link {
+    text-align: center;
+  }
+
+  .footer .dropdown-menu {
+    position: fixed;
+    opacity: 0;
+    transform: translate(-50%, -10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: block;
+    margin-left: 70%;
+    pointer-events: none;
+  }
+
+  /* When dropdown is open */
+  .footer .show>.dropdown-menu {
+    position: relative;
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+  }
+}
+
+/* Dropdown animation */
+@media (min-width: 991.98px) {
+  .footer .dropdown-menu {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin-left: 110%;
+    pointer-events: none;
+  }
+
+  /* When dropdown is open */
+  .footer .show>.dropdown-menu {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+  }
+}
+
+/* Contact us text */
+.footer .contact-us-text {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Admin CSS styles */
+.footer-admin {
+  background-color: #def3f6 !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Super admin CSS styles */
+.footer-superadmin {
+  background-color: #64cbe1 !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* All Users CSS styles */
+/* Footer Logos */
+.footer .ocu-logo, .footer-admin .ocu-logo,
+.footer .club-logo, .footer-admin .club-logo,
+.footer-superadmin .ocu-logo, .footer-superadmin .club-logo {
+  width: 100px;
+}
