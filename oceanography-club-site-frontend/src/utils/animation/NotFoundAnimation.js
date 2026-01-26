@@ -5,7 +5,7 @@ const NotFoundAnimation = () => {
   return (
     <div
       style={{
-        width: "90%",
+        width: "80%",
         overflow: "hidden"
       }}
     >

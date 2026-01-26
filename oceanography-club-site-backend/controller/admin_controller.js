@@ -43,7 +43,7 @@ const addAdmin = async (req, res, next) => {
     const savedAdmin = await admin.save();
     res.status(201).json({
       response: savedAdmin,
-      message: "Admin added successfully.",
+      message: "Admin added successfully. The email has been sent.",
     });
     console.log("Admin created successfully.");
   } catch (err) {

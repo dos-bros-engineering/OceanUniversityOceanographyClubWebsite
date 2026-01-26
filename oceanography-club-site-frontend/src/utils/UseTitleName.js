@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const UseTitleName = (title) => {
   useEffect(() => {
-    document.title = title + " | OCU Oceanography Club";
+    document.title = title === "" ? "OCU Oceanography Club" : title + " | OCU Oceanography Club";
   }, [title])
 }
 
