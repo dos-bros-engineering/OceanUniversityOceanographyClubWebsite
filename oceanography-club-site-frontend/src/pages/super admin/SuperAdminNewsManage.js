@@ -114,9 +114,9 @@ const SuperAdminNewsManage = () => {
               .filter((n) => {
                 return searchTerm.trim() === ""
                   ? n
-                  : n.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                  admin.find((a) => a?.id === n.admin_id)?.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                      (n.publish === true ? "yes" : "no").includes(searchTerm.toLowerCase());
+                  : n.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  (n.publish === true ? "yes" : "no").includes(searchTerm.toLowerCase()) ||
+                  admin.find((a) => a?.id === n.admin_id)?.name.toLowerCase().includes(searchTerm.toLowerCase());
               })
               .sort((a, b) => new Date(b.date) - new Date(a.date))
               ?.map((n, index) => (

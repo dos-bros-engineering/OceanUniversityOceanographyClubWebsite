@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "backend of the ocean university oceanography club website",
   "license": "ISC",
-  "author": "Dos Bros website makers",
+  "author": "Dos Bros Engineering",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {

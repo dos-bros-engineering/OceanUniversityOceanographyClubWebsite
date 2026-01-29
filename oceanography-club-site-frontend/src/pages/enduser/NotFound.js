@@ -17,15 +17,16 @@ const NotFound = () => {
           <NotFoundAnimation />
         </div>
 
-        <div className="p-0 col-lg-4">
+        <div className="p-0 col-lg-4 mt-2 mt-lg-0">
           <div className="mx-4">
-            <h1 className="mb-0">Lost at Sea</h1>
+            <h1 className="mb-0">Stranded at Sea</h1>
             <div className="divider pt-1 bg-white rounded"></div>
           </div>
           <div className="mt-3">
             <h4 className="mx-4">
-              Land ho? Nay! This page be swallowed by the sea, never to be seen
-              again!
+              You’ve washed up where no page exists, just endless water and
+              circling fins. This island won’t save you… but the right course
+              will.
             </h4>
             <div className="d-flex justify-content-center">
               <button
@@ -33,7 +34,7 @@ const NotFound = () => {
                 className="btn btn-light btn-lg mt-2 fw-bold"
                 onClick={() => navigate("/")}
               >
-                Sail Home
+                Navigate Home
               </button>
             </div>
           </div>

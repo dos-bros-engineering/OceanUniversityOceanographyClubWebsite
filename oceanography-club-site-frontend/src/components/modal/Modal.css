@@ -9,3 +9,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.modal-body h2,
+.delete-modal-post-title {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}

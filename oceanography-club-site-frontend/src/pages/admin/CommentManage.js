@@ -129,7 +129,7 @@ const CommentManage = () => {
                 return searchTerm.trim() === ""
                   ? comment
                   : comment.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                  comment.email.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                  comment.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
                   articles
                     .find((article) => article.id === comment.article_id)
                     ?.title.toLowerCase()

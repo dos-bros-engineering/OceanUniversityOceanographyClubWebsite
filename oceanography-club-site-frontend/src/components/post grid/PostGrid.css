@@ -99,3 +99,16 @@
   color: #ffffff;
   border-radius: 50%;
 }
+
+/* All pages CSS */
+.post-grid h4,
+.post-grid h5,
+.post-grid div,
+.post-grid-admin h4,
+.post-grid-admin div,
+.post-grid-superadmin h4,
+.post-grid-superadmin div {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
