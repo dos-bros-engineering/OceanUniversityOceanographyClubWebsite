@@ -40,7 +40,7 @@ const EndUserFooter = () => {
                 <NavDropdown
                   title={
                     <span>
-                      Article <i className="bi bi-caret-up-fill fs-6"></i>
+                      Article <i className="bi bi-caret-down-fill fs-6"></i>
                     </span>
                   }
                   id="navbarScrollingDropdown"
